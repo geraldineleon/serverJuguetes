@@ -20,9 +20,9 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/api/ropa/", (req, res) => {
+app.get("/api/juguetes/", (req, res) => {
   console.log("Llegaste bien jaja");
-  res.sendFile(path.join(__dirname + "/productos.json"));
+  res.sendFile(path.join(__dirname + "/juguetes.json"));
 });
 
 app.listen(process.env.PORT || 3000, () => {
