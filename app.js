@@ -20,10 +20,11 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/api/juguetes/", (req, res) => {
+app.get("/api/ropa/", (req, res) => {
   res.sendFile(path.join(__dirname + "/juguetes.json"));
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Servidor en: ", process.env.PORT || 3000);
+  console.log("Servidor running on port: ", process.env.PORT || 3000);
 });
+
